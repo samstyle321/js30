@@ -19,7 +19,7 @@ body{
 .panel{
 	background: #680f9c;
 	box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
-	color: white;
+	color: #fff;
 	text-align: center;
 	align-items: center;
 	transition: 
