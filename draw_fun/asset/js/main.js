@@ -44,6 +44,15 @@ canvas.addEventListener('mousedown',(e) => {
 	[lastX, lastY] = [e.offsetX, e.offsetY];
 
 });
+canvas.addEventListener('click',(e) => {
+    isDrawing=true;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+
+});
+
+canvas.addEventListener('clickmove',draw);
+canvas.addEventListener('clickup',() => isDrawing = false);
+canvas.addEventListener('clickout',() => isDrawing = false);
 
 
 canvas.addEventListener('mousemove',draw);
